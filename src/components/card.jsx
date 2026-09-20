@@ -8,6 +8,7 @@ function Card() {
       cardcontent: "birch trees",
       carddescription:
         "Explore the beauty of nature and discover amazing places.",
+      explore: true,
     },
 
     {
@@ -15,6 +16,7 @@ function Card() {
       cardcontent: "Beautiful Mountains",
       carddescription:
         "Explore the beauty of nature and discover amazing places.",
+      explore: true,
     },
 
     {
@@ -23,14 +25,15 @@ function Card() {
       cardcontent: "woodland forests",
       carddescription:
         "Explore the beauty of nature and discover amazing places.",
+      explore: false,
     },
   ];
   return (
-    <div>
+    <div className="flex flex-wrap gap-4 justify-center items-center p-4 ">
       {data.map((item, index) => (
         <div
           key={index}
-          className="w-80 rounded-xl overflow-hidden shadow-lg bg-white"
+          className="w-80 rounded-xl overflow-hidden shadow-lg bg-white "
           style={{
             display: "flex",
             flexDirection: "column",
@@ -51,8 +54,8 @@ function Card() {
 
             <p className="mt-2 text-gray-600">{item.carddescription}</p>
 
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-              Explore
+            <button className={`mt-4 px-4 py-2 ${item.explore ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-600 hover:bg-gray-700'} text-white rounded-lg `}>
+              {item.explore ? "Explore" : "Coming Soon"}
             </button>
           </div>
         </div>
