@@ -4,7 +4,8 @@ import Home from "../components/home";
 import About from "../components/about";
 import User from "../components/User";
 import Navbar from "../components/AppNavigation";
-import IntoUsers from "../components/IntoUsers";
+import Products from "../components/Products";
+
 
 
 function Routing() {
@@ -15,7 +16,7 @@ function Routing() {
         <Route path ="/home" element = {<Home />} /> 
         <Route path ="/about" element = {<About />} />
         <Route path ="/user" element = {<User />} />
-        <Route path ="/user/:name" element = {<IntoUsers />} />
+        <Route path ="/products" element = {<Products />} />
       </Routes>
     </div>
 

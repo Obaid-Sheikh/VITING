@@ -29,6 +29,15 @@ function Navbar(){
         }}>
           Users
         </NavLink>
+        <NavLink to="/products" className={(e) => {
+          return [
+            e.isActive ? "text-blue-500 font-bold" : "text-gray-700",
+            e.isActive ? "underline" : "no-underline"
+          ].join(" ");
+        }}>
+          Products
+        </NavLink>
+
       </nav>
     </>
   );

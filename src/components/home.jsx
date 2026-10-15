@@ -7,6 +7,7 @@ function Home() {
       <p className="text-lg text-gray-700">
         This is the home page of our application. Navigate through the app using the links above.
       </p>
+      
     </div>
   );
 }
