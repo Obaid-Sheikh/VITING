@@ -8,7 +8,9 @@ import Products from "../components/Products";
 
 
 
+
 function Routing() {
+  
   return (
     <div className="">
       <Routes>
@@ -16,6 +18,7 @@ function Routing() {
         <Route path ="/home" element = {<Home />} /> 
         <Route path ="/about" element = {<About />} />
         <Route path ="/user" element = {<User />} />
+
         <Route path ="/products" element = {<Products />} />
       </Routes>
     </div>
